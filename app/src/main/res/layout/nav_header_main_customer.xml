@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingTop="20dp"
+    android:background="@color/blueMaksys"
+    android:gravity="center"
+    android:id="@+id/nav_home"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+
+        android:gravity="left">
+    <ImageView
+        android:layout_width="20dp"
+        android:paddingLeft="5dp"
+        android:layout_height="20dp"
+        android:gravity="right"
+        app:srcCompat="@drawable/round_home_white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Home" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:padding="8dp"
+    android:gravity="right">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:padding="5dp"
+        app:srcCompat="@drawable/maksys_logo" />
+</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_engineer_current_tickets"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/et_engineer_current_ticket_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ticketid"
+                        android:textColor="@color/lighbrown"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/et_engineer_current_ticket_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customername"
+                        android:textColor="@color/lighbrown"
+                        android:textSize="14dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"  />
+
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/et_engineer_current_ticket_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:inputType="textMultiLine"
+                        android:lines="2"
+                        android:textSize="16sp"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:textStyle="bold"                            android:windowSoftInputMode="stateUnchanged" />
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/ticketid"-->
+                    <!--android:textColor="@color/grey"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/et_engineer_current_ticket_ticketid"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ems="15"-->
+                    <!--android:inputType="text"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:enabled="false"-->
+                    <!--android:windowSoftInputMode="stateUnchanged" />-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/issuedetails"
+                        android:textColor="@color/lighbrown"
+                        android:textSize="16sp"
+                        android:layout_marginTop="30dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_engineer_current_ticket_issuedetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:inputType="textMultiLine"
+                        android:textSize="16sp"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:longClickable="false"
+                        android:textStyle="bold"
+                        android:lines="3"
+                        android:text=""
+                        android:maxLines="5"
+                        android:windowSoftInputMode="stateUnchanged" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/Serviceprogress"
+                        android:textColor="@color/lighbrown"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_engineer_current_ticket_service_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:inputType="textMultiLine"
+                        android:textSize="16sp"
+                        android:enabled="true"
+                        android:lines="4"
+                        android:maxLines="5"
+                        android:windowSoftInputMode="stateUnchanged" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_engineer_current_tickets_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:visibility="visible"
+                        android:paddingBottom="10dp"
+                        app:cardBackgroundColor="@color/blueMaksys"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="8dp">
+
+                        <Button
+                            android:id="@+id/btn_engineer_current_ticket_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ripple_white"
+                            android:ems="15"
+                            android:text="@string/next"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="OnClick" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBarCurrentRequest"-->
+        <!--style="?android:attr/progressBarStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_currentTicket_empty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="No Current Ticket!"-->
+        <!--android:textStyle="bold"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_Ticket_create"
+            android:icon="@drawable/round_assignment_black"
+            android:title="Create Tickets" />
+        <item
+            android:id="@+id/nav_Ticket"
+            android:icon="@drawable/round_assignment_black"
+            android:title="Tickets" />
+        <item
+            android:id="@+id/nav_request"
+            android:icon="@drawable/round_shop_black"
+
+            android:title="Sale Request" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/round_account_circle_black"
+
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_change_pin"
+            android:icon="@drawable/round_fiber_pin_black"
+
+            android:title="Change Pin" />
+
+        <item
+            android:id="@+id/nav_comments"
+            android:icon="@drawable/round_comment_black_24dp"
+
+            android:title="Comments" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/round_settings_black"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icons8_shutdown"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

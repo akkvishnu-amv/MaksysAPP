@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "347942385804",
+    "firebase_url": "https://maksys-6238c.firebaseio.com",
+    "project_id": "maksys-6238c",
+    "storage_bucket": "maksys-6238c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347942385804:android:cc7bac62997e542b",
+        "android_client_info": {
+          "package_name": "com.maksystechnologies.maksys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347942385804-keddul139lvg1tecfr700b3d2eni8hnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkwMCk0vLXw4jb95MSvEFOM-NrADnDhRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347942385804-keddul139lvg1tecfr700b3d2eni8hnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Create_Ticket_Fragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/scroll_customer_profile"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardUseCompatPadding="true"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingBottom="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="10dp"
+                            android:paddingRight="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Device"
+                                android:textColor="@color/lighbrown"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <MultiAutoCompleteTextView
+                                android:id="@+id/autocomplete_customer_create_ticket_device_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="15"
+                                android:enabled="true"
+                                android:inputType="text"
+                                android:textSize="16sp"
+                                android:windowSoftInputMode="stateUnchanged" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="@string/devicestatus"
+                                android:textColor="@color/lighbrown"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/sp_customer_create_ticket_device_status"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:ems="15"
+                                android:entries="@array/devicesttuslist"
+                                android:enabled="false"
+                                android:inputType="text"
+                                android:textSize="16sp"
+                                android:windowSoftInputMode="stateUnchanged" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="30dp"
+                                android:text="@string/Detaileddescriptio"
+                                android:textColor="@color/lighbrown"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_customer_create_ticket_device_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="15"
+                                android:enabled="true"
+                                android:minLines="3"
+                                android:lines="3"
+                                android:inputType="textMultiLine"
+
+                                android:textSize="16sp"
+                                android:windowSoftInputMode="stateUnchanged" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/contactmobilenumber"
+                                android:textColor="@color/lighbrown"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_customer_create_ticket_device_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="15"
+                                android:enabled="true"
+                               android:maxLength="10"
+                                android:inputType="number"
+
+                                android:textSize="16sp"
+                                android:windowSoftInputMode="stateUnchanged" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/et_customer_create_ticket_imagepath"
+                                    android:layout_width="220dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="14"
+                                    android:enabled="false"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:textSize="16sp"
+                                    android:windowSoftInputMode="stateUnchanged" />
+
+                                <ImageButton
+                                    android:id="@+id/btn_customer_create_ticket_upload"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="2"
+                                    android:src="@android:drawable/ic_menu_camera" />
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/card_customer_create_ticket"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                app:cardBackgroundColor="@color/blueMaksys"
+                                app:cardCornerRadius="24dp"
+                                app:cardElevation="8dp">
+
+                                <Button
+                                    android:id="@+id/btn_customer_create_ticket_create"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/ripple_white"
+                                    android:ems="15"
+                                    android:text="@string/createticket"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="OnClick" />
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progress_customer_create_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:visibility="invisible"
+        android:minWidth="80dp"
+        android:minHeight="80dp" />
+
+</RelativeLayout>

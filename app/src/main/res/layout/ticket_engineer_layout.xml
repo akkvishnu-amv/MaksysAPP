@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp">
+
+
+        <TextView
+            android:id="@+id/text_engineer_ticket_ticket_code"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="ticket code"
+            android:textStyle="bold"
+            android:textColor="@color/lighbrown"/>
+        <TextView
+            android:id="@+id/text_engineer_ticket_ticket_customer_branch"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="ticket code"
+            android:textStyle="bold"
+            android:textColor="@color/lighbrown"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:lines="3"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/issuedetails"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Serviceprogress"
+        android:textStyle="bold"
+        android:lines="3"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/completedon"
+        android:textStyle="bold"
+        android:lines="2"
+        android:textColor="@color/black"/>
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/text_engineer_ticket_ticket_Issue"
+android:lines="3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Device"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/lighbrown"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/text_engineer_ticket_ticket_serviece_progress"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Device"
+                    android:textStyle="bold"
+                    android:lines="3"
+                    android:textColor="@color/lighbrown"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/text_engineer_ticket_ticket_serviece_completed"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:lines="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Device"
+                    android:textStyle="bold"
+                    android:textColor="@color/lighbrown"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="left">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_customer_update_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/blueMaksys"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/engineer_ticket_details_close"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ripple_white"
+                    android:ems="15"
+                    android:text="OK"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.maksystechnologies.maksys">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_MMS" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Utilities.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/maksys_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/maksys_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.LoginCustomer"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.LoginEngineer"
+            android:noHistory="true" />
+        <activity android:name=".Activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.SignUp_Customer"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.MobileOtpVerification"
+            android:noHistory="true" />
+
+        <!-- <receiver android:name=".Utilities.SMSBroadCastReceiver"> -->
+        <!-- <intent-filter android:priority="999"> -->
+        <!-- <action android:name="android.provider.Telephony.SMS_RECEIVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity
+            android:name=".Activities.LoginAsGuest"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.LockScreenCustomerCreate"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.LockScreenCustomerConfirm"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.LockScreenCustomer"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.MainEngineerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".Activities.LockScreenEngineerCreate"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.LockScreenEngineerConfirm"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.LockScreenEngineer"
+            android:noHistory="true" />
+        <activity android:name=".Activities.MainEngineerActivity$myscheduleactivity" />
+        <activity
+            android:name=".Activities.MainCustomerActivity"
+            android:label="@string/title_activity_main_customer"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SettingsCustomerActivity"
+            android:label="@string/title_activity_settings_customer" />
+
+        <!-- <receiver android:process=":remote" android:name=".Utilities.AttendanceBroadCastReceiver"></receiver> -->
+
+
+        <!--  -->
+        <receiver
+            android:name=".Utilities.AttendanceBroadCastReceiver"
+            android:enabled="true" />
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED"></action> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <service -->
+        <!-- android:name=".Utilities.CheckAttendanceService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:process=":your_service" > -->
+        <!-- </service> -->
+
+        <service
+            android:name=".Utilities.CheckAttendanceService"
+            android:enabled="true" />
+        <service
+            android:name=".Utilities.FcmIdService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activities.NotificationEngineer"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.ServiceRequestDetails"
+            android:noHistory="true"
+             />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".Activities.ChangePassword"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.NotificationCustomer"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.FeedbackCustomer"
+            android:noHistory="true" />
+        <activity android:name=".Activities.RedirectActivity" />
+        <activity android:name=".Activities.CurrentTickets"
+            android:noHistory="true"/>
+        <activity android:name=".Activities.CurrentTicketSpares"
+            ></activity>
+    </application>
+
+</manifest>

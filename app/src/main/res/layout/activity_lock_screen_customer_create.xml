@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.LockScreenCustomerCreate">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/logo_create_pin"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_round"
+        android:padding="5dp"
+        android:src="@drawable/maksys_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pindescrption"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/logo_create_pin"
+        android:id="@+id/description_pin_customer"
+        android:visibility="visible"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/description_pin_customer"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pin_input_create"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Pin"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/blueMaksys"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/invalid_otp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="4dp"
+                    android:textColorHighlight="@color/blueMaksys"
+                    android:textColorLink="@color/blueMaksys"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableBottom="@drawable/line"
+                    android:cursorVisible="true"
+                    android:id="@+id/et_pin_create_1"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="4dp"
+                    android:textColorHighlight="@color/blueMaksys"
+                    android:textColorLink="@color/blueMaksys"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:cursorVisible="true"
+                    android:textSize="24sp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableBottom="@drawable/line"
+                    android:id="@+id/et_pin_create_2"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="4dp"
+                    android:textColorHighlight="@color/blueMaksys"
+                    android:textColorLink="@color/blueMaksys"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:cursorVisible="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableBottom="@drawable/line"
+                    android:textSize="24sp"
+                    android:id="@+id/et_pin_create_3"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="4dp"
+                    android:textColorHighlight="@color/blueMaksys"
+                    android:textColorLink="@color/blueMaksys"
+                    android:cursorVisible="true"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableBottom="@drawable/line"
+                    android:id="@+id/et_pin_create_4"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="4dp"
+                    android:textColorHighlight="@color/blueMaksys"
+                    android:textColorLink="@color/blueMaksys"
+                    android:cursorVisible="true"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableBottom="@drawable/line"
+                    android:id="@+id/et_pin_create_5"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="4dp"
+                    android:textColorHighlight="@color/blueMaksys"
+                    android:textColorLink="@color/blueMaksys"
+                    android:cursorVisible="true"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:textSize="24sp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableBottom="@drawable/line"
+                    android:id="@+id/et_pin_create_6"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/circular_image_view1"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/man" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/name_textview1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/circular_image_view1"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textColor="@color/colorDarkGrey"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/message_textview1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/name_textview1"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="Create Pin"-->
+        <!--android:textColor="@color/colorLightGrey" />-->
+    <!--<include-->
+        <!--android:id="@+id/dots_indicator_container1"-->
+        <!--layout="@layout/dots_indicator1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:layout_below="@id/message_textview1"-->
+        <!--android:layout_marginTop="40dp" />-->
+    <!--<include-->
+        <!--android:id="@+id/num_pad_container1"-->
+        <!--layout="@layout/num_pad_create"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/dots_indicator_container1"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginTop="30dp" />-->
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_confirm_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/blueMaksys"
+        android:text="Next"
+        android:textColor="@android:color/white" />
+
+
+
+
+</RelativeLayout>
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".Activities.LockScreenCustomer">-->
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/circular_image_view"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/man" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/name_textview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/circular_image_view"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:textColor="@color/colorDarkGrey"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/message_textview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/name_textview"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="Create Pin"-->
+        <!--android:textColor="@color/colorLightGrey" />-->
+    <!--<include-->
+        <!--android:id="@+id/dots_indicator_container"-->
+        <!--layout="@layout/dots_indicator1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:layout_below="@id/message_textview"-->
+        <!--android:layout_marginTop="40dp" />-->
+    <!--<include-->
+        <!--android:id="@+id/num_pad_container"-->
+        <!--layout="@layout/num_pad_create"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/dots_indicator_container"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginTop="30dp" />-->
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/btn_confirm_create"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@color/blueMaksys"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Next"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@android:color/white" />&ndash;&gt;-->
+
+<!--</RelativeLayout>-->

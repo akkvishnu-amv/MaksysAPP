@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="base__toolbar_size">50dip</dimen>
+
+    <dimen name="base__toolbar_title">18dip</dimen>
+    <dimen name="base__toolbar_title_padding_horizontal">12dip</dimen>
+
+    <dimen name="base__toolbar_option_text">14dip</dimen>
+    <dimen name="base__toolbar_option_image">30dip</dimen>
+    <dimen name="base__toolbar_option_padding">12dip</dimen>
+
+    <dimen name="base__toolbar_item_horizontal_padding">12dip</dimen>
+    <dimen name="base__toolbar_item_button_size">30dip</dimen>
+    <dimen name="base__toolbar_item_button_size_with_horizontal_padding">54dip</dimen>
+
+    <dimen name="base__toolbar_svg_padding_horizontal">17dip</dimen>
+    <dimen name="base__toolbar_svg_padding_vertical">15dip</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

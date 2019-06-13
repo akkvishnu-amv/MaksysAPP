@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/Attendance"
+            android:icon="@drawable/round_access_time_black_24dp"
+            app:actionLayout="@layout/togglemenuitem"
+            app:showAsAction="always"
+            android:id="@+id/nav_attendance"/>
+        <item
+            android:id="@+id/nav_engineer_request"
+            android:icon="@drawable/round_shop_black"
+
+            android:title="Service Requests" />
+        <item
+            android:id="@+id/nav_engineer_schedule"
+            android:icon="@drawable/outline_schedule_black_24dp"
+            android:title="Scheduled Tickets" />
+        <item
+            android:id="@+id/nav_engineer_Ticket"
+            android:icon="@drawable/round_assignment_black"
+            android:title="My Tickets" />
+        <!--<item-->
+            <!--android:id="@+id/nav_engineer_Current_Ticket"-->
+            <!--android:icon="@drawable/round_build_black_24dp"-->
+            <!--android:title="Current Ticket" />-->
+
+
+
+        <item
+            android:id="@+id/nav_engieer_profile"
+            android:icon="@drawable/round_account_circle_black"
+
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_engineer_change_pin"
+            android:icon="@drawable/round_fiber_pin_black"
+
+            android:title="Change Pin" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_engineer_settings"
+            android:icon="@drawable/round_settings_black"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_engineer_logout"
+            android:icon="@drawable/icons8_shutdown"
+            android:title="Logout" />
+    </group>
+
+
+</menu>
